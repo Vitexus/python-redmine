@@ -1,0 +1,27 @@
+Source: python-redmine
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/maxtepkeev/python-redmine
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/Vitexus/python-redmine.git
+Vcs-Browser: https://github.com/Vitexus/python-redmine
+
+Package: python3-redmine
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-requests,
+Description: Library for communicating with a Redmine project management application
+ Python-Redmine is a library for communicating with a Redmine project
+ management application. It provides a high-level interface to the Redmine
+ REST API, making it easy to work with issues, projects, users, time entries,
+ and other Redmine resources.

@@ -1,0 +1,138 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: python-redmine
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .coveragerc
+           .github/workflows/docs.yml
+           .github/workflows/tests.yml
+           CHANGELOG.rst
+           MANIFEST.in
+           README.rst
+           docs/Makefile
+           docs/_static/css/python-redmine.css
+           docs/_static/img/logo.png
+           docs/_templates/searchbox.html
+           docs/advanced/custom_resources.rst
+           docs/advanced/external_auth.rst
+           docs/advanced/index.rst
+           docs/advanced/request_engines.rst
+           docs/advanced/working_with_files.rst
+           docs/changelog.rst
+           docs/conf.py
+           docs/configuration.rst
+           docs/editions.rst
+           docs/exceptions.rst
+           docs/faq.rst
+           docs/index.rst
+           docs/installation.rst
+           docs/introduction.rst
+           docs/make.bat
+           docs/requirements.txt
+           docs/resources/attachment.rst
+           docs/resources/checklist.rst
+           docs/resources/contact.rst
+           docs/resources/contact_tag.rst
+           docs/resources/crm_query.rst
+           docs/resources/custom_field.rst
+           docs/resources/deal.rst
+           docs/resources/deal_category.rst
+           docs/resources/deal_status.rst
+           docs/resources/enumeration.rst
+           docs/resources/expense.rst
+           docs/resources/file.rst
+           docs/resources/group.rst
+           docs/resources/index.rst
+           docs/resources/invoice.rst
+           docs/resources/invoice_payment.rst
+           docs/resources/issue.rst
+           docs/resources/issue_category.rst
+           docs/resources/issue_relation.rst
+           docs/resources/issue_status.rst
+           docs/resources/news.rst
+           docs/resources/note.rst
+           docs/resources/order.rst
+           docs/resources/order_status.rst
+           docs/resources/product.rst
+           docs/resources/product_category.rst
+           docs/resources/project.rst
+           docs/resources/project_membership.rst
+           docs/resources/query.rst
+           docs/resources/role.rst
+           docs/resources/ticket.rst
+           docs/resources/time_entry.rst
+           docs/resources/tracker.rst
+           docs/resources/user.rst
+           docs/resources/version.rst
+           docs/resources/wiki_page.rst
+           redminelib/__init__.py
+           redminelib/engines/__init__.py
+           redminelib/engines/base.py
+           redminelib/engines/sync.py
+           redminelib/exceptions.py
+           redminelib/lookups.py
+           redminelib/managers/__init__.py
+           redminelib/managers/base.py
+           redminelib/managers/standard.py
+           redminelib/resources/__init__.py
+           redminelib/resources/base.py
+           redminelib/resources/standard.py
+           redminelib/resultsets.py
+           redminelib/utilities.py
+           redminelib/version.py
+           setup.cfg
+           setup.py
+           tests/README.rst
+           tests/__init__.py
+           tests/requirements.txt
+           tests/responses/__init__.py
+           tests/responses/standard.py
+           tests/test_engines.py
+           tests/test_managers.py
+           tests/test_redmine.py
+           tests/test_resources_standard.py
+           tests/test_resultsets.py
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     docs/license.rst
+Copyright: __NO_COPYRIGHT__ in: docs/license.rst
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ Pro Edition
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ Copyright 2024 Maxim Tepkeev
+ .
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+     http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
