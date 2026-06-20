@@ -60,7 +60,12 @@ class BaseEngine:
         :param data: (required). Data to send in the body of the request.
         :type data: dict, bytes or file-like object
         """
-        kwargs = dict(self.requests, **{'data': data or {}, 'params': params or {}, 'headers': headers or {}})
+        # Merge (don't overwrite) the connection-level headers/params stored in
+        # self.requests with the per-request ones. Overwriting them dropped the
+        # X-Redmine-API-Key header (set in __init__), breaking API key auth.
+        kwargs = dict(self.requests, **{'data': data or {}})
+        kwargs['params'] = dict(self.requests.get('params', {}), **(params or {}))
+        kwargs['headers'] = dict(self.requests.get('headers', {}), **(headers or {}))
 
         if method in ('post', 'put', 'patch') and 'Content-Type' not in kwargs['headers']:
             kwargs['data'] = json.dumps(data)
